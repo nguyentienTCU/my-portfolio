@@ -7,12 +7,13 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="relative w-full h-[600px] rounded-3xl overflow-hidden">
+            <div className="relative w-full h-[350px] sm:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden">
               <Image
                 src="/about_image.png"
                 alt="About Me"
                 fill
                 style={{ objectFit: "cover" }}
+                className="transition-transform duration-300 hover:scale-105"
               />
             </div>
             <div className="absolute inset-0">
@@ -24,7 +25,7 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <div className="space-y-4 text-gray-600">
               <p>
-                I’m Tien, a freshman computer science student and aspiring
+                I'm Tien, a freshman computer science student and aspiring
                 full-stack developer focused on creating responsive, performant,
                 and scalable web applications. My passion lies in turning
                 complex ideas into clean, efficient solutions that are easy to
@@ -36,9 +37,9 @@ const About = () => {
                 streamline deployment, and collaborate effectively.
               </p>
               <p>
-                Whether it’s designing a frontend UI, setting up a backend
+                Whether it's designing a frontend UI, setting up a backend
                 service, or streamlining workflows with version control, I enjoy
-                every part of the development process—and I’m always learning
+                every part of the development process—and I'm always learning
                 more.
               </p>
             </div>

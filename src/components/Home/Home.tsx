@@ -33,23 +33,27 @@ const Home = () => {
           </div>
 
           <div className="relative">
-            <div className="relative w-full h-[600px]">
-              <div className="flex h-full mt-10">
+            <div className="relative w-full h-[350px] sm:h-[500px] lg:h-[600px]">
+              <div className="flex h-full mt-4 sm:mt-6 lg:mt-10">
                 <Image
                   src="/hero_image.png"
                   alt="Profile"
                   fill
                   style={{ objectFit: "cover" }}
-                  className="rounded-3xl"
+                  className="rounded-3xl transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="absolute top-4 right-4">
-                <span className="text-[#6C63FF] text-4xl">✦</span>
+              <div className="absolute top-2 sm:top-4 right-2 sm:right-4">
+                <span className="text-[#6C63FF] text-2xl sm:text-3xl lg:text-4xl">
+                  ✦
+                </span>
               </div>
-              <div className="absolute bottom-4 left-4">
-                <span className="text-[#6C63FF] text-4xl">✦</span>
+              <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4">
+                <span className="text-[#6C63FF] text-2xl sm:text-3xl lg:text-4xl">
+                  ✦
+                </span>
               </div>
             </div>
           </div>
