@@ -5,17 +5,17 @@ const Contact = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/nguyentienTCU",
       icon: "/github.png",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/tien-nguyen-598758329/",
       icon: "/linkedin.png",
     },
     {
       name: "Facebook",
-      url: "https://twitter.com/yourusername",
+      url: "https://www.facebook.com/longtienxd",
       icon: "/facebook.png",
     },
   ];
