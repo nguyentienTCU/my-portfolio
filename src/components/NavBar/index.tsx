@@ -10,6 +10,13 @@ export default function NavBar() {
     sectionId: string
   ) => {
     e.preventDefault();
+    
+    // If we're not on the home page, navigate to home page first
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const section = document.getElementById(sectionId);
     section?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false); // Close menu after clicking a link
@@ -45,6 +52,13 @@ export default function NavBar() {
       >
         Projects
       </a>
+      <a
+        href="/info"
+        className="text-black hover:text-gray-600 transition-colors text-sm sm:text-base"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Info
+      </a>
       <button
         onClick={(e) => scrollToSection(e, "contact")}
         className="cursor-pointer px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-[#6C63FF] border border-[#6C63FF] rounded-md hover:bg-[#6C63FF] hover:text-white transition-colors"
@@ -66,7 +80,13 @@ export default function NavBar() {
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-[#6C63FF]">TN</span>
+              <a
+                href="#home"
+                onClick={(e) => scrollToSection(e, "home")}
+                className="text-xl font-bold text-[#6C63FF] hover:text-[#5b54d6] transition-colors cursor-pointer"
+              >
+                TN
+              </a>
             </div>
 
             {/* Desktop Navigation */}
@@ -97,7 +117,13 @@ export default function NavBar() {
         >
           <div className="h-full flex flex-col p-4">
             <div className="flex justify-between items-center mb-8">
-              <span className="text-xl font-bold text-[#6C63FF]">TN</span>
+              <a
+                href="#home"
+                onClick={(e) => scrollToSection(e, "home")}
+                className="text-xl font-bold text-[#6C63FF] hover:text-[#5b54d6] transition-colors cursor-pointer"
+              >
+                TN
+              </a>
               <button
                 onClick={() => setIsMenuOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"

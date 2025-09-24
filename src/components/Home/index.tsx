@@ -10,8 +10,8 @@ const Home = () => {
   };
 
   return (
-    <section className="min-h-screen pt-20 bg-white" id="home">
-      <div className="container mx-auto px-6 pt-12">
+    <section className="py-20 bg-white" id="home">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg mb-4">Hey, I am Tien</p>

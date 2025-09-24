@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="py-20 bg-white" id="about">
+    <section className="py-8 bg-white" id="about">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="relative">
             <div className="relative w-full h-[350px] sm:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden">
               <Image
@@ -21,11 +22,11 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div className="pt-8">
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <div className="space-y-4 text-gray-600">
               <p>
-                I'm Tien, a freshman computer science student and aspiring
+                I'm Tien, a sophomore computer science student and aspiring
                 full-stack developer focused on creating responsive, performant,
                 and scalable web applications. My passion lies in turning
                 complex ideas into clean, efficient solutions that are easy to
@@ -43,6 +44,13 @@ const About = () => {
                 more.
               </p>
             </div>
+            <Link 
+              href="/info"
+              className="inline-block cursor-pointer mt-6 px-6 py-3 bg-[#6C63FF] text-white rounded-lg hover:bg-[#5A52E5] transition-colors duration-300 flex items-center gap-2"
+            >
+              More Information
+              <span className="text-lg">→</span>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,38 +2,15 @@ import React from "react";
 import Image from "next/image";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Ahuse",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: "/project1.jpg",
-      link: "#",
-    },
-    {
-      title: "App Dashboard",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: "/project2.jpg",
-      link: "#",
-    },
-    {
-      title: "Easy Rent",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: "/project3.jpg",
-      link: "#",
-    },
-  ];
 
   return (
-    <section className="py-20 bg-gray-50" id="projects">
-      <div className="pt-8">
+    <section className="bg-gray-50" id="projects">
+      <div className="pt-4">
         {/* Projects Content */}
         <div className="container mx-auto px-4 py-16">
           {/* <h1 class="text-4xl font-bold text-center mb-12"></h1> */}
           <h1 className="text-4xl font-bold text-center mb-12">
-            Project Showcase
+            My Projects
           </h1>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -47,9 +24,6 @@ const Projects = () => {
                 <div className="flex items-center gap-2 mb-4">
                   <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
                     Startup Project
-                  </span>
-                  <span className="text-gray-600 text-sm">
-                    2025 April - now
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
@@ -95,9 +69,6 @@ const Projects = () => {
                   <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
                     Group Project
                   </span>
-                  <span className="text-gray-600 text-sm">
-                    2025 April - now
-                  </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
                   British Airways Dashboard Website
@@ -142,9 +113,6 @@ const Projects = () => {
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">
                     Personal Project
                   </span>
-                  <span className="text-gray-600 text-sm">
-                    2025 February - 2025 April
-                  </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
                   E-commerce Website
@@ -188,9 +156,6 @@ const Projects = () => {
                 <div className="flex items-center gap-2 mb-4">
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">
                     Personal Project
-                  </span>
-                  <span className="text-gray-600 text-sm">
-                    2025 January - 2025 March
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
